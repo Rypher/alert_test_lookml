@@ -29,4 +29,10 @@ view: alerts_categorical {
     type: count
     drill_fields: []
   }
+
+  measure: sum {
+    type: sum
+    sql: ${TABLE}.value ;;
+    drill_fields: []
+  }
 }

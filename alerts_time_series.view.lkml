@@ -30,4 +30,10 @@ view: alerts_time_series {
     type: count
     drill_fields: []
   }
+
+  measure: sum {
+    type: sum
+    sql: ${TABLE}.value ;;
+    drill_fields: []
+  }
 }
