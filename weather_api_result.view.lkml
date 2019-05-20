@@ -29,7 +29,7 @@ view: weather_api_result {
   }
 
   dimension: city {
-    type:  number
+    type:  string
     sql: ${TABLE}.city  ;;
   }
 
@@ -55,6 +55,16 @@ view: weather_api_result {
   measure: avg_temp{
     type: average
     sql: ${TABLE}.temp;;
+  }
+
+  measure: avg_rain{
+    type: average
+    sql: ${TABLE}.rain;;
+  }
+
+  measure: avg_wind{
+    type:  average
+    sql: ${TABLE}.wind ;;
   }
 
 }
