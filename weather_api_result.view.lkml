@@ -1,5 +1,5 @@
 view: weather_api_result {
-  sql_table_name: public.weather_api_result ;;
+  sql_table_name: public.weather_api_result_view ;;
 
   dimension: id {
     primary_key: yes
@@ -13,6 +13,8 @@ view: weather_api_result {
       raw,
       time,
       date,
+      hour,
+      minute15,
       week,
       month,
       quarter,
@@ -26,8 +28,33 @@ view: weather_api_result {
     sql: ${TABLE}."result" ;;
   }
 
+  dimension: city {
+    type:  number
+    sql: ${TABLE}.city  ;;
+  }
+
+  dimension: rain {
+    type:  number
+    sql: ${TABLE}.rain;;
+  }
+
+  dimension: temp {
+    type:  number
+    sql: ${TABLE}.temp ;;
+  }
+
+  dimension: wind {
+    type:  number
+    sql: ${TABLE}.wind ;;
+  }
+
   measure: count {
     type: count
-    drill_fields: [id]
   }
+
+  measure: avg_temp{
+    type: average
+    sql: ${TABLE}.temp;;
+  }
+
 }
