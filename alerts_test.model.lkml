@@ -19,5 +19,6 @@ explore: weather_api_result {}
 explore: v_test {}
 explore: v_monitor {}
 explore: v_alert {}
+explore: r_single_test {}
 
 explore: ua_2 {}
