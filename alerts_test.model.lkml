@@ -16,6 +16,8 @@ explore: alerts_invoice_example {}
 
 explore: weather_api_result {}
 
-explore: ua_explore {}
+explore: v_test {}
+explore: v_monitor {}
+explore: v_alert {}
 
 explore: ua_2 {}
