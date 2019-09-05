@@ -1,6 +1,6 @@
 connection: "alerts_rds_postgres"
 
-# include all the views
+# include all the views.
 include: "*.view"
 
 datagroup: alerts_test_default_datagroup {
