@@ -1,7 +1,8 @@
 connection: "alerts_rds_postgres"
 
-# include all the views.
 include: "*.view"
+include: "*.dashboard"
+
 
 datagroup: alerts_test_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
