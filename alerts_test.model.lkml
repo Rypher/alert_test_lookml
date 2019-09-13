@@ -5,7 +5,7 @@ include: "*.view"
 
 datagroup: alerts_test_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
-  max_cache_age: "1 hour"
+  max_cache_age: "1 seconds"
 }
 
 persist_with: alerts_test_default_datagroup
