@@ -1,5 +1,5 @@
 - dashboard: deletable
-  title: Deletable
+  title: Lookml Deletable
   layout: newspaper
   elements:
   - title: test
