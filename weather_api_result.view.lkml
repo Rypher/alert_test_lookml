@@ -52,14 +52,34 @@ view: weather_api_result {
     type: count
   }
 
+  measure: min_temp{
+    type: min
+    sql: ${TABLE}.temp;;
+  }
+
+  measure: max_temp{
+    type: max
+    sql: ${TABLE}.temp;;
+  }
+
   measure: avg_temp{
     type: average
     sql: ${TABLE}.temp;;
   }
 
+  measure: max_rain{
+    type: max
+    sql: ${TABLE}.rain;;
+  }
+
   measure: avg_rain{
     type: average
     sql: ${TABLE}.rain;;
+  }
+
+  measure: max_wind{
+    type:  max
+    sql: ${TABLE}.wind ;;
   }
 
   measure: avg_wind{
