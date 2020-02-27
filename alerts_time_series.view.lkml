@@ -31,7 +31,7 @@ view: alerts_time_series {
     drill_fields: []
   }
 
-  measure: sum2 {
+  measure: sum {
     type: sum
     sql: ${TABLE}.value ;;
     drill_fields: []
