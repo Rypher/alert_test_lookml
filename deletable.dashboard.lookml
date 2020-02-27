@@ -7,9 +7,9 @@
     model: alerts_test
     explore: alerts_invoice_example
     type: looker_column
-    fields: [alerts_invoice_example.sum, alerts_invoice_example.department]
+    fields: [alerts_invoice_example.sum2, alerts_invoice_example.department]
     filters:
-      alerts_invoice_example.sum: ">0"
+      alerts_invoice_example.sum2: ">0"
       alerts_invoice_example.department: '"dept_1","dept_2"'
     sorts: [alerts_invoice_example.department]
     limit: 500
