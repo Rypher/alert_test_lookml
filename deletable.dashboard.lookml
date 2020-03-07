@@ -10,7 +10,7 @@
   elements:
   - title: test
     name: test
-    model: alerts_test
+    model: alerts_test_5
     explore: alerts_invoice_example
     type: looker_column
     fields: [alerts_invoice_example.sum2, alerts_invoice_example.department]
