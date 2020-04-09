@@ -10,10 +10,10 @@
   elements:
   - title: test
     name: test
-    model: alerts_test_5
+    model: alerts_test
     explore: alerts_invoice_example
     type: looker_column
-    fields: [alerts_invoice_example.sum2, alerts_invoice_example.department]
+    fields: [alerts_invoice_example.sum, alerts_invoice_example.department]
     sorts: [alerts_invoice_example.department]
     limit: 500
     column_limit: 50

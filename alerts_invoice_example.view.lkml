@@ -58,7 +58,7 @@ view: alerts_invoice_example {
     drill_fields: []
   }
 
-  measure: sum2 {
+  measure: sum {
     type: sum
     sql: ${TABLE}.amount ;;
     drill_fields: []
