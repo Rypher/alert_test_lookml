@@ -9,7 +9,10 @@ datagroup: alerts_test_default_datagroup {
   max_cache_age: "1 seconds"
 }
 
-persist_with: alerts_test_default_datagroup
+# persist_with: alerts_test_default_datagroup
+
+
+persist_for: "0 seconds"
 
 
 explore: alerts_invoice_example {}
