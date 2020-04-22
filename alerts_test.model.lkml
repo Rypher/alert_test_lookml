@@ -17,4 +17,5 @@ persist_for: "0 seconds"
 
 explore: alerts_invoice_example {}
 explore: weather_api_result {}
+explore: weather_view_with_errors {}
 explore: ua_2 {}
