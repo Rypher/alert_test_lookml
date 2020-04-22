@@ -68,9 +68,9 @@ view: weather_view_with_errors {
     sql: ${TABLE}.temp;;
   }
 
-  measure: max_rain_fail{
+  measure: max_rain{
     type: max
-    sql: ${TABLE}.rain;;
+    sql: ${TABLE}.rain_fail;;
   }
 
   measure: avg_rain{
