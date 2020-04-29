@@ -19,7 +19,7 @@ view: alerts_invoice_example {
   }
 
   dimension: formatted_number {
-    type: string
+    type: number
     sql: 42 ;;
     value_format: "$0"
   }
