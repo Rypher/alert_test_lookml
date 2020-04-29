@@ -21,7 +21,7 @@ view: alerts_invoice_example {
   dimension: formatted_number {
     type: string
     sql: 42 ;;
-    value_format: "0.0,\" a\""
+    value_format: "$0"
   }
 
   dimension: amount {
