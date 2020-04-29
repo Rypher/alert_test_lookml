@@ -77,6 +77,12 @@ view: weather_api_result {
     sql: ${TABLE}.rain;;
   }
 
+  measure: avg_rain_formatted{
+    type: average
+    value_format: "0.000,\" inches\""
+    sql: ${TABLE}.rain;;
+  }
+
   measure: max_wind{
     type:  max
     sql: ${TABLE}.wind ;;
