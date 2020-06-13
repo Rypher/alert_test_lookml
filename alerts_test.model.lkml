@@ -11,8 +11,8 @@ datagroup: alerts_test_default_datagroup {
 
 # persist_with: alerts_test_default_datagroup
 
-
-persist_for: "0 seconds"
+persist_for: "5 hours"
+# persist_for: "0 seconds"
 
 
 explore: alerts_invoice_example {}
