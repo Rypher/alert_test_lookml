@@ -18,6 +18,12 @@ view: alerts_invoice_example {
     sql: ${TABLE}.status ;;
   }
 
+  dimension: formatted_number {
+    type: number
+    sql: 42 ;;
+    value_format: "$0"
+  }
+
   dimension: amount {
     type: number
     sql: ${TABLE}.amount ;;

@@ -1,4 +1,5 @@
-view: weather_api_result {
+
+view: weather_view_with_errors {
   sql_table_name: public.weather_api_result_view ;;
 
   dimension: id {
@@ -69,17 +70,11 @@ view: weather_api_result {
 
   measure: max_rain{
     type: max
-    sql: ${TABLE}.rain;;
+    sql: ${TABLE}.rain_fail;;
   }
 
   measure: avg_rain{
     type: average
-    sql: ${TABLE}.rain;;
-  }
-
-  measure: avg_rain_formatted{
-    type: average
-    value_format: "0.000,\" inches\""
     sql: ${TABLE}.rain;;
   }
 
