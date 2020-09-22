@@ -23,6 +23,11 @@ view: alerts_invoice_example {
     sql: ${TABLE}.amount ;;
   }
 
+  dimension: example {
+    type: string
+    sql: ${TABLE}.example ;;
+  }
+
   dimension_group: created_date {
     type: time
     timeframes: [
