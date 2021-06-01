@@ -6,7 +6,7 @@
     type: field_filter
     explore: alerts_invoice_example
     field: alerts_invoice_example.department
-    default_value: '"dept_1","dept_2"'
+    default_value: '"dept_2"'
   elements:
   - title: test
     name: test
